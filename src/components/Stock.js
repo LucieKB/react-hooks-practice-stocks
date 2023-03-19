@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 
 function Stock({stock, onHandleSwitch}) {
-  
+ 
 
-  function handleTransferStock(){;
+  function handleTransferStock(){
     onHandleSwitch(stock)
-console.log(stock)}
+console.log(stock, "again")}
 
 
   

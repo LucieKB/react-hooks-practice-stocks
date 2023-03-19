@@ -1,10 +1,10 @@
 import React from "react";
 import Stock from "./Stock";
 
-function StockContainer({stocks, onHandleSwitch}) {
+function StockContainer({stocks, onHandleSwitch, isInPortfolio, setStockIsInPortfolio}) {
   
 const stocksToDisplay = stocks.map((stock)=>
-<Stock key={stock.id} stock={stock} onHandleSwitch={onHandleSwitch}/>
+<Stock key={stock.id} stock={stock} onHandleSwitch={onHandleSwitch} isInPortfolio={isInPortfolio} setStockIsInPortfolio={setStockIsInPortfolio}/>
 )
 
   return (
